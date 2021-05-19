@@ -1,0 +1,26 @@
+clusterName: CLUSTER_NAME
+config:
+  gceClusterConfig:
+    serviceAccountScopes:
+    - https://www.googleapis.com/auth/cloud-platform
+  softwareConfig:
+    imageVersion: 1.5-ubuntu18
+    optionalComponents:
+    - ANACONDA
+    - JUPYTER
+    properties:
+      spark:spark.jars: gs://spark-lib/bigquery/spark-bigquery-with-dependencies_2.12-0.18.0.jar,gs://spark-lib/bigquery/spark-bigquery-latest.jar
+  masterConfig:
+    numInstances: 1
+    machineTypeUri: n1-standard-4
+    diskConfig:
+      bootDiskType: pd-standard
+      bootDiskSizeGb: 500
+      numLocalSsds: 0
+  workerConfig:
+    numInstances: 2
+    machineTypeUri: n1-standard-4
+    diskConfig:
+      bootDiskType: pd-standard
+      bootDiskSizeGb: 500
+      numLocalSsds: 0
