@@ -1,6 +1,10 @@
-# datalake-training
+# Working with Google Cloud Dataproc Hub
 
-# Welcome to the Datalake Demo 
+# These notebooks run as is (change project ID and bucket here and there)
+# If you want to do the training, use the notebooks at https://github.com/grubwieser/Datalake-training 
+
+Kudos to Sepideh for the solutions: https://github.com/sepidehjah/datalake-training 
+
 
     Copyright 2020 Google LLC
 
